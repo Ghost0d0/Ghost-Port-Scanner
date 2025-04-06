@@ -1,46 +1,69 @@
-# Ghost Scanner - Advanced Port Scanner
+# 👻 Ghost Scanner - Advanced Port Scanner
 
-## Description
+![Hacker Theme](https://img.shields.io/badge/Theme-Hacker-green) ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![License](https://img.shields.io/badge/License-MIT-green)
 
-Ghost Scanner is an advanced, customizable Python-based port scanner with a graphical user interface (GUI) built using `customtkinter`. This tool is designed to scan open ports on a target IP address, detect the operating system (OS), and check for vulnerabilities based on the open ports detected. The application utilizes `nmap` for OS detection and performs vulnerability checks based on known port services like FTP and SMB.
+Ghost Scanner is a port scanning tool with stealth capabilities, OS detection, and vulnerability assessment features. Designed for cybersecurity professionals and ethical hackers, this tool provides a clean GUI interface for conducting network reconnaissance.
 
-This project is suitable for anyone interested in cybersecurity and penetration testing, offering a quick way to scan and assess the security of networks.
+**Disclaimer**: This project is strictly for **educational** and **authorized cybersecurity research** purposes.  
+> **Do not deploy this tool on systems you do not own or have written permission to test. Unauthorized use is illegal.**
 
 ## Features
 
-- **Port Scanning:** Detects open ports on the target IP.
-- **OS Detection:** Identifies the operating system running on the target.
-- **Vulnerability Checking:** Checks known vulnerabilities for open ports.
-- **Progress Bar:** Displays the status of the scan.
-- **Threaded Scanning:** Runs the scan in a separate thread to keep the GUI responsive.
-- **Customizable Ports List:** The port list can be expanded or modified as needed.
-- **GUI with CustomTkinter:** A user-friendly interface with dark mode and a "ghost" theme.
+- 🕵️‍♂️ **Stealth Scanning**: Uses SYN scanning technique for low-detection port scanning
+- 💻 **OS Detection**: Identifies target operating systems using Nmap fingerprinting
+- 🔍 **Vulnerability Assessment**: Checks for common vulnerabilities on open ports
+- 📊 **GUI Interface**: User-friendly interface with progress tracking
+- 📂 **Report Generation**: Automatically saves scan results to files
+- 🎨 **Hacker Theme**: Sleek dark interface with terminal-style aesthetics
 
-## Technologies Used
+## Installation
 
-- **Python:** The primary language used to write the script.
-- **CustomTkinter:** For building the GUI interface.
-- **Nmap:** For OS detection and port scanning.
-- **Scapy:** For low-level network scanning.
-- **Threading:** For handling background processes.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ghost-scanner.git
+   cd ghost-scanner
+   ```
 
-## Prerequisites
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Before running Ghost Scanner, ensure you have the following:
+3. Run the application:
+   ```bash
+   python main.py
+   ```
 
-1. **Python 3.x** installed on your system.
-2. **Pip** (Python’s package installer) installed.
+## Usage
 
-### Required Python Libraries
+1. Enter the target IP address in the input field
+2. Click "Start Scan" to begin the scanning process
+3. View results in the GUI or check the `results/` directory for saved reports
 
-This project uses the following Python libraries:
+The scanner checks these ports by default:
+- 21 (FTP)
+- 22 (SSH)
+- 80 (HTTP)
+- 445 (SMB)
+- 3306 (MySQL)
 
-- `customtkinter`: For creating the GUI.
-- `scapy`: For crafting and sending network packets.
-- `nmap`: For OS detection and port scanning.
-- `threading`: For handling background processes.
+## Technical Details
 
-You can install these libraries by running the following commands in your terminal or command prompt:
+- Uses Scapy for low-level packet manipulation
+- Integrates Nmap for OS detection
+- Implements threading for responsive GUI during scans
+- Follows ethical scanning practices with proper connection termination
 
-```bash
-pip install customtkinter scapy python-nmap threading
+## Legal Notice
+
+This tool is provided for educational purposes only. The developers assume no liability and are not responsible for any misuse or damage caused by this program. Only use this tool on systems you own or have explicit permission to test.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or pull request for any improvements.
+
+## License
+
+MIT License - See LICENSE file for details.
+
+👻 Ghost - Because even ghosts leave traces.
