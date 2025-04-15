@@ -65,5 +65,6 @@ Contributions are welcome! Please open an issue or pull request for any improvem
 ## License
 
 MIT License - See LICENSE file for details.
+> Buy me a coffee - _0xf89c84554c78B3194A56042bd803CcA62EA423E9_
 
 👻 Ghost - Because even ghosts leave traces.
