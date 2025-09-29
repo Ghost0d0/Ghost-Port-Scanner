@@ -7,6 +7,9 @@ Ghost Scanner is a port scanning tool with stealth capabilities, OS detection, a
 **Disclaimer**: This project is strictly for **educational** and **authorized cybersecurity research** purposes.  
 > **Do not deploy this tool on systems you do not own or have written permission to test. Unauthorized use is illegal.**
 
+## 📜 Youtube
+https://youtu.be/XLGp-4ZjD64
+
 ## Features
 
 - 🕵️‍♂️ **Stealth Scanning**: Uses SYN scanning technique for low-detection port scanning
